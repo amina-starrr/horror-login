@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horror Login 🔮</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Creepster&family=Nosifer&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <canvas id="fogCanvas" class="fog-canvas"></canvas>
+  
+  <div class="particles" id="particles"></div>
+
+  <div class="container">
+    <div class="login-card">
+      <div class="card-glow"></div>
+      
+      <div class="header">
+        <div class="skull-icon">
+          <i class="fas fa-skull-crossbones"></i>
+        </div>
+        <h1 class="title">Enter the Void</h1>
+        <p class="subtitle">Login to continue your journey into darkness...</p>
+      </div>
+
+      <form class="login-form" id="loginForm">
+        <div class="input-group">
+          <label for="username">Username</label>
+          <div class="input-container">
+            <i class="fas fa-user-slash input-icon"></i>
+            <input type="text" id="username" placeholder="Enter your name..." autocomplete="off" required>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password</label>
+          <div class="input-container">
+            <i class="fas fa-key input-icon"></i>
+            <input type="password" id="password" placeholder="Reveal the secret..." autocomplete="off" required>
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn">
+          <span class="btn-text">Enter Darkness</span>
+          <span class="btn-blood">💧</span>
+        </button>
+      </form>
+
+      <div class="footer">
+        <span class="warning">Wrong credentials = Eternal torment</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="success-overlay" id="successOverlay">
+    <div class="success-card">
+      <i class="fas fa-dungeon"></i>
+      <h2>Access Granted</h2>
+      <p>You have entered the abyss...</p>
+      <button class="close-btn">Continue to Hell</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
